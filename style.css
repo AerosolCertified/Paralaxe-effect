@@ -1,0 +1,37 @@
+:root{
+    --distancia-base: 1;
+    --escala-base: 100px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 98vh;
+    width: 300vw;
+    position: relative;
+}
+
+.distancia {
+    height: calc(var(--escala-base)/var(--distancia-base));
+    width: calc(var(--escala-base)/var(--distancia-base));
+
+    background-color: red;
+    margin: 10px;
+    border-radius: 100em;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+}
+.scroll{
+    overflow-x: auto;
+}
+
+.longe{
+    --distancia-base: 2;
+}
